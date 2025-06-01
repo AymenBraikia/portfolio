@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 200px;
+}
+
+.description {
+    color: var(--descriptionClr);
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skillSection {
+    /* min-width: 250px; */
+    width: 30%;
+    height: 250px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #1e293b;
+}
+
+.skillTitle {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill {
+    color: var(--descriptionClr);
+    margin: 10px 0;
+    position: relative;
+    left: 20px;
+}
+
+.skill::marker {
+    font-size: 25px;
+    color: var(--themeClr2);
+}

@@ -17,6 +17,7 @@
 .projects {
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .project {
@@ -24,14 +25,19 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     width: 500px;
+    padding-bottom: 20px;
+    background-color: rgb(5, 0, 30);
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .projectImg {
     width: 100%;
     aspect-ratio: 2/1.2;
     background-color: wheat;
+    height: unset;
 }
 
 .projectSkills {
@@ -41,6 +47,7 @@
     align-items: flex-start;
     gap: 5px;
     width: 100%;
+    padding: 0 15px;
 }
 
 .skill {
@@ -50,4 +57,37 @@
     font-size: 14px;
     font-weight: bold;
     border-radius: 50px;
+}
+
+.projectName {
+    font-size: 25px;
+    color: var(--themeClr2);
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.projectDescription {
+    color: var(--descriptionClr);
+    line-height: 25px;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.projectDetails {
+    display: flex;
+    gap: 30px;
+    padding: 0 15px;
+}
+
+.link {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: var(--transition);
+}
+
+.link:hover {
+    color: var(--themeClr2);
 }

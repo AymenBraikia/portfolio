@@ -1,3 +1,13 @@
+import Header from "./components/header";
+import Introduction from "./components/introduction";
+
 export default function Home() {
-	return <></>;
+	return (
+		<>
+			<Header />
+			<div style={{ position: "absolute", top: "60px", left: "0", height: "fit-content", width: "100vw", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", rowGap: 50, padding: "0 100px" }}>
+				<Introduction />
+			</div>
+		</>
+	);
 }

@@ -1,0 +1,108 @@
+.container {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: var(--themebgClr);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.container::before,
+.container::after {
+    content: '';
+    content: "";
+    background-color: #0072ff;
+    filter: blur(70px);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+}
+
+.container::before {
+    background-color: #d000ff;
+    top: unset;
+    left: unset;
+    bottom: 150px;
+    right: 50px;
+}
+
+.welcoming {
+    color: var(--themeClr2);
+    position: relative;
+    left: 60px;
+    font-weight: bold;
+}
+
+.welcoming::before {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: var(--themeClr2);
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.name,
+.position {
+    font-size: 60px;
+}
+
+.position {
+    color: var(--themeClr2);
+}
+
+.description {
+    color: var(--descriptionClr);
+    max-width: 600px;
+    font-size: 18px;
+}
+
+.icons,
+.btn {
+    display: flex;
+    gap: 20px;
+}
+
+.myWork,
+.touch {
+    padding: 15px 20px;
+    font-size: 14px;
+    background-color: var(--themeClr);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.touch {
+    background-color: #122041;
+    color: var(--themeClr2);
+    border: 2px solid var(--themeClr2);
+}
+
+.touch:hover {
+    filter: brightness(1.15);
+}
+
+.myWork:hover {
+    filter: brightness(0.85);
+}
+
+.github,
+.linkedin {
+    transition: var(--transition);
+}
+
+.github:hover,
+.linkedin:hover {
+    color: var(--themeClr2);
+}

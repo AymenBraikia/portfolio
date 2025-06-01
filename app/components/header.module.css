@@ -1,0 +1,30 @@
+.header {
+    width: 100vw;
+    min-height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--themebgClr);
+    color: var(--themeClr2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.headerLink {
+    color: var(--descriptionClr);
+    transition: var(--transition);
+}
+
+.headerLink:hover,
+.headerLink.active {
+    color: var(--themeClr2);
+}

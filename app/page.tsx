@@ -2,6 +2,7 @@ import Header from "./components/header";
 import Introduction from "./components/introduction";
 import Projects from "./components/projects";
 import About from "./components/about";
+import Touch from "./components/touch";
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 				<Introduction />
 				<Projects />
 				<About />
+				<Touch />
 			</div>
 		</>
 	);

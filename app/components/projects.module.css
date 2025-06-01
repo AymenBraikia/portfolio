@@ -1,4 +1,53 @@
-.projects{
+.container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.description {
+    color: var(--descriptionClr);
+    text-align: center;
+    line-height: 25px;
+}
+
+.projects {
     display: flex;
     gap: 50px;
+}
+
+.project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    width: 500px;
+}
+
+.projectImg {
+    width: 100%;
+    aspect-ratio: 2/1.2;
+    background-color: wheat;
+}
+
+.projectSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+}
+
+.skill {
+    color: var(--themeClr2);
+    background-color: #031c53;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
 }

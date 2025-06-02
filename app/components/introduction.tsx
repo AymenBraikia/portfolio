@@ -42,10 +42,10 @@ function Introduction() {
 				</Link>
 			</div>
 			<div className={styles.icons}>
-				<Link href={"github"} className={styles.github}>
+				<Link href={"https://github.com/AymenBraikia"} className={styles.github}>
 					{github()}
 				</Link>
-				<Link href={"linkedin"} className={styles.linkedin}>
+				<Link href={"https://www.linkedin.com/in/aymenbraikia/"} className={styles.linkedin}>
 					{linkedin()}
 				</Link>
 			</div>

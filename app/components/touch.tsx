@@ -31,7 +31,7 @@ function download() {
 
 function Touch() {
 	return (
-		<div className={styles.container}>
+		<div id="contact" className={styles.container}>
 			<h1 className={styles.title}>Get In Touch</h1>
 			<div className={styles.info}>
 				<div className={styles.myInfo}>

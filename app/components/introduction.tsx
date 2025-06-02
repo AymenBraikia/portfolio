@@ -22,7 +22,7 @@ function linkedin() {
 
 function Introduction() {
 	return (
-		<div className={styles.container}>
+		<div id="home" className={styles.container}>
 			<div className={styles.welcoming}>Hello, I&apos;m</div>
 			<div className={styles.myself}>
 				<h1 className={styles.name}>Aymen Braikia</h1>

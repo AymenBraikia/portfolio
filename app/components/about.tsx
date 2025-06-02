@@ -112,7 +112,7 @@ function Design() {
 
 function About() {
 	return (
-		<div className={styles.container}>
+		<div id="about" className={styles.container}>
 			<h1 className={styles.title}>About Me</h1>
 
 			<div className={styles.description}>

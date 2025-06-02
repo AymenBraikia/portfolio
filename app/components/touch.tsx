@@ -43,7 +43,7 @@ function Touch() {
 
 					<div className={styles.location}>{location()} Tenes, Algeria</div>
 
-					<Link href="" download={} className={styles.resume}>
+					<Link href="/cv.pdf" download={"/cv.pdf"} className={styles.resume}>
 						{download()} Download Resume
 					</Link>
 				</div>

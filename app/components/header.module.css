@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     z-index: 5;
-    background-color: var(--themebgClr);
+    background-color: var(--themebgClr2);
     color: var(--themeClr2);
     display: flex;
     justify-content: space-between;

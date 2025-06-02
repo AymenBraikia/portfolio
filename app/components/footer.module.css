@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    background-color: var(--themebgClr2);
+    color: #94A3B8;
+    gap: 50px;
+    padding: 30px 50px;
+}
+
+.footerSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    transition: var(--transition);
+}
+
+.icon:hover {
+    color: var(--themeClr2);
+}

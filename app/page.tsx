@@ -3,6 +3,7 @@ import Introduction from "./components/introduction";
 import Projects from "./components/projects";
 import About from "./components/about";
 import Touch from "./components/touch";
+import Footer from "./components/footer";
 
 export default function Home() {
 	return (
@@ -13,6 +14,7 @@ export default function Home() {
 				<Projects />
 				<About />
 				<Touch />
+				<Footer />
 			</div>
 		</>
 	);

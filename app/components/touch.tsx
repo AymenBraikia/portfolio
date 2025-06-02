@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./touch.module.css";
 
 function email() {
@@ -42,7 +43,9 @@ function Touch() {
 
 					<div className={styles.location}>{location()} Tenes, Algeria</div>
 
-					<div className={styles.resume}>{download()} Download Resume</div>
+					<Link href="" download={} className={styles.resume}>
+						{download()} Download Resume
+					</Link>
 				</div>
 
 				<form className={styles.form}>

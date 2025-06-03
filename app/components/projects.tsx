@@ -1,6 +1,7 @@
-import Image from "next/image";
-import neuro from "../../public/neuro.png";
-import easyMart from "../../public/easyMart.png";
+// import { useEffect } from "react";
+import Image, { StaticImageData } from "next/image";
+import neuroImg from "../../public/neuro.png";
+import easyMartImg from "../../public/easyMart.png";
 
 import styles from "./projects.module.css";
 import Link from "next/link";
@@ -24,7 +25,43 @@ function github() {
 	);
 }
 
+interface project {
+	imgSrc: StaticImageData;
+	skills: string[];
+	name: string;
+	description: string;
+}
+
+class Project {
+	imgSrc: StaticImageData;
+	skills: string[];
+	name: string;
+	description: string;
+
+	constructor(img: StaticImageData, skills: string[], name: string, description: string) {
+		this.imgSrc = img;
+		this.skills = skills;
+		this.name = name;
+		this.description = description;
+	}
+}
+
 function Projects() {
+	const projects = [
+		new Project(
+			neuroImg,
+			["React", "Next", "TypeScript", "Express", "Mongodb", "Node.js"],
+			"Neuro",
+			`Neuro is a sleek, responsive AI chatbot powered by Llama 3 APIs. It delivers real-time, human-like conversations through a clean, minimal UI. Designed for customer support, productivity, and general Q&A, Neuro offers a smooth and lightweight experience across all devices.`
+		),
+		new Project(
+			easyMartImg,
+			["React", "Next", "TypeScript", "Express", "Mongodb", "Node.js"],
+			"Easy Mart",
+			`EasyMart is a modern, fully responsive e-commerce platform built with Next.js and TypeScript. It offers dynamic product listings, category filtering, and a clean UI for a smooth shopping experience. Optimized for performance and scalability, it’s ideal for online retail.`
+		),
+	];
+
 	return (
 		<div id="projects" className={styles.container}>
 			<h1 className={styles.title}>Projects</h1>
@@ -32,7 +69,46 @@ function Projects() {
 				Here are some of my recent projects that demonstrate my skills and expertise in the MERN stack. <br /> Each project was an opportunity to learn and grow as a developer.
 			</div>
 			<div className={styles.projects}>
-				<div className={styles.project}>
+				{...projects.map((proj: project, index: number) => {
+					return (
+						<div key={index} className={styles.project}>
+
+							
+							<div className={styles.imgWrapper}>
+								<Image fill src={proj.imgSrc} alt={`Project ${index}`} className={styles.projectImg} />
+							</div>
+
+							<div className={styles.projectSkills}>
+								{...proj.skills.map((skill: string, skillIndex: number) => {
+									return (
+										<div className={styles.skill} key={skillIndex}>
+											{skill}
+										</div>
+									);
+								})}
+							</div>
+
+							<div className={styles.projectName}>{proj.name}</div>
+
+							<p className={styles.projectDescription}>{proj.description}</p>
+
+							<div className={styles.projectDetails}>
+								<Link className={styles.link} href={"https://github.com/AymenBraikia/Neuro"}>
+									{github()}
+									{" Code"}
+								</Link>
+
+								<Link className={styles.link} href={"https://neuro-aymens-projects-a9014767.vercel.app/"}>
+									{demo()}
+									{" Demo"}
+								</Link>
+							</div>
+						</div>
+					);
+				})}
+			</div>
+
+			{/* <div className={styles.project}>
 					<Image src={neuro} alt="Project 1" className={styles.projectImg}></Image>
 					<div className={styles.projectSkills}>
 						<div className={styles.skill}>React</div>
@@ -86,8 +162,8 @@ function Projects() {
 							{" Demo"}
 						</Link>
 					</div>
-				</div>
-			</div>
+				</div> */
+			/* </div> */}
 		</div>
 	);
 }

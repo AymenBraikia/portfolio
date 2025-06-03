@@ -69,12 +69,14 @@
 }
 
 
-.projectImg {
+.imgWrapper{
     width: 100%;
     aspect-ratio: 2/1.2;
     height: unset;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    overflow: hidden;
+    position: relative;
 }
 
 .projectSkills {

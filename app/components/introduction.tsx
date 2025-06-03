@@ -31,7 +31,7 @@ function Introduction() {
 
 			<p className={styles.description}>(MERN Stack)</p>
 			<p className={styles.description}>
-				I&apos;m a passionate web developer on a journey to create meaningful digital experiences. With expertise in MongoDB, Express.js, React.js, and Node.js, I transform ideas into elegant, functional applications.
+				As an enthusiastic web developer, I&apos;m on a quest to produce significant digital experiences. With my proficiency in Express.js, React.js, Node.js, and MongoDB, I turn concepts into sophisticated, useful apps.{" "}
 			</p>
 			<div className={styles.btn}>
 				<Link className={styles.myWork} href={"#projects"}>

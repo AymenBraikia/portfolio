@@ -56,6 +56,7 @@
     box-sizing: unset;
     animation: 5s spin linear infinite;
 }
+
 .project::after {
     content: '';
     width: 100%;
@@ -67,14 +68,13 @@
     transform: translate(-50%, -50%);
     border-radius: 15px;
     z-index: -1;
-    /* padding: 2px; */
     box-sizing: unset;
     animation: 5s spin linear infinite;
     transition: var(--transition);
 }
+
 .project:hover::after {
     content: '';
-    /* padding: 2px; */
     filter: blur(16px);
 }
 
@@ -90,7 +90,7 @@
 }
 
 
-.imgWrapper{
+.imgWrapper {
     width: 100%;
     aspect-ratio: 2/1.2;
     height: unset;

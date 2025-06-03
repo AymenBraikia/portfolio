@@ -2,7 +2,7 @@ import styles from "./about.module.css";
 
 function FrontEndIco() {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(96 165 250)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code text-blue-600 dark:text-blue-400">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(96 165 250)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.icon}>
 			<polyline points="16 18 22 12 16 6"></polyline>
 			<polyline points="8 6 2 12 8 18"></polyline>
 		</svg>
@@ -10,18 +10,7 @@ function FrontEndIco() {
 }
 function Backend() {
 	return (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="rgb(147 51 234)"
-			strokeWidth="2"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-			className="lucide lucide-server text-purple-600 dark:text-purple-400\"
-		>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(147 51 234)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.icon}>
 			<rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
 			<rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
 			<line x1="6" x2="6.01" y1="6" y2="6"></line>
@@ -31,18 +20,7 @@ function Backend() {
 }
 function Database() {
 	return (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="rgb(74 222 128)"
-			strokeWidth="2"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-			className="lucide lucide-database text-green-600 dark:text-green-400"
-		>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(74 222 128)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.icon}>
 			<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
 			<path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
 			<path d="M3 12A9 3 0 0 0 21 12"></path>
@@ -51,18 +29,7 @@ function Database() {
 }
 function Soft() {
 	return (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="rgb(219 39 119)"
-			strokeWidth="2"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-			className="lucide lucide-pen-tool text-pink-600 dark:text-pink-400\"
-		>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(219 39 119)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.icon}>
 			<path d="m12 19 7-7 3 3-7 7-3-3z"></path>
 			<path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
 			<path d="m2 2 7.586 7.586"></path>
@@ -72,36 +39,14 @@ function Soft() {
 }
 function Learning() {
 	return (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="rgb(251 191 36)"
-			strokeWidth="2"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-			className="lucide lucide-book text-amber-600 dark:text-amber-400"
-		>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(251 191 36)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.icon}>
 			<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
 		</svg>
 	);
 }
 function Design() {
 	return (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="rgb(13 148 136)"
-			strokeWidth="2"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-			className="lucide lucide-users text-teal-600 dark:text-teal-400\"
-		>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(13 148 136)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.icon}>
 			<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
 			<circle cx="9" cy="7" r="4"></circle>
 			<path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>

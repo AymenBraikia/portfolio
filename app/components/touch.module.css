@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 0 200px;
+    padding: 0 20vw;
 }
 
 .myInfo {
@@ -156,4 +156,77 @@
     width: 100%;
     outline: none;
     border: none;
+}
+
+@media (max-width:800px) {
+    .info {
+        flex-direction: column;
+        padding: 0;
+        width: 90vw;
+        gap: 50px;
+    }
+
+    .myInfo,
+    .form {
+        width: 100%;
+    }
+}
+
+@media (min-width:800px) and (max-width:1000px) {
+    .info {
+        flex-direction: column;
+        /* padding: 0; */
+        width: 90vw;
+        gap: 50px;
+    }
+
+    .myInfo,
+    .form {
+        width: 100%;
+    }
+}
+
+@media (min-width:2300px) {
+
+
+    .position {
+        font-size: 90px;
+    }
+
+    .description {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .project {
+        width: 700px;
+    }
+
+    .projectName {
+        font-size: 40px;
+    }
+
+    .skill {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .projectDescription {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .link {
+        font-size: 30px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
 }

@@ -18,6 +18,8 @@
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .project {
@@ -150,4 +152,57 @@
 
 .link:hover {
     color: var(--themeClr2);
+}
+
+@media (max-width: 1200px) {
+
+    .project {
+        max-width: 90vw;
+    }
+}
+
+
+@media (min-width:2300px) {
+
+
+    .position {
+        font-size: 90px;
+    }
+
+    .description {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .project {
+        width: 700px;
+    }
+
+    .projectName {
+        font-size: 40px;
+    }
+
+    .skill {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .projectDescription {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .link {
+        font-size: 30px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
 }

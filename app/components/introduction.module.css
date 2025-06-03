@@ -107,3 +107,48 @@
 .linkedin:hover {
     color: var(--themeClr2);
 }
+
+
+@media (max-width:1200px) {
+
+    .name,
+    .position {
+        font-size: 40px;
+    }
+}
+
+@media (min-width:2300px) {
+
+    .container {
+        gap: 50px;
+    }
+
+    .name,
+    .position {
+        font-size: 90px;
+    }
+
+    .description {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .welcoming {
+        font-size: 50px;
+    }
+
+    .myWork,
+    .touch {
+        font-size: 30px;
+        padding: 20px 25px;
+    }
+
+    .icons {
+        gap: 30px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+}

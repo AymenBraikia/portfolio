@@ -42,6 +42,7 @@ a {
 }
 #title{
   color: var(--themeClr) !important;
+  font-size: 45px;
 }
 
 @media (prefers-color-scheme: dark) {

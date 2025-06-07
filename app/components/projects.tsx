@@ -59,13 +59,16 @@ function Projects() {
 			easyMartImg,
 			["React", "Next", "TypeScript", "Express", "Mongodb", "Node.js"],
 			"Easy Mart",
-			`EasyMart is a modern, fully responsive e-commerce platform built with Next.js and TypeScript. It offers dynamic product listings, category filtering, and a clean UI for a smooth shopping experience. Optimized for performance and scalability, it’s ideal for online retail.`
+			`Easy Mart is a e-commerce platform built with MERN stack and TypeScript. The biggest challenge was making filtering system and finding products data because most of the public fake data offered only one image and bad description and naming, so i had to make a small javascript script that copy product images and description from amazon and aliexpress`
+			// `EasyMart is a modern, fully responsive e-commerce platform built with Next.js and TypeScript. It offers dynamic product listings, category filtering, and a clean UI for a smooth shopping experience. Optimized for performance and scalability, it’s ideal for online retail.`
 		),
 	];
 
 	return (
 		<div id="projects" className={styles.container}>
-			<h1 className={styles.title} id="title">Projects</h1>
+			<h1 className={styles.title} id="title">
+				Projects
+			</h1>
 			<div className={styles.description}>
 				Here are some of my recent projects that demonstrate my skills and expertise in the MERN stack. <br /> Each project was an opportunity to learn and grow as a developer.
 			</div>

@@ -58,13 +58,21 @@ function Design() {
 function About() {
 	return (
 		<div id="about" className={styles.container}>
-			<h1 className={styles.title} id="title">About Me</h1>
+			<h1 className={styles.title} id="title">
+				About Me
+			</h1>
 
 			<div className={styles.description}>
-				I&apos;m an aspiring full-stack developer with a focus on the MERN stack. My journey into web development began with a curiosity about how websites work and quickly grew into a passion for building interactive, user-friendly applications.{" "}
+				<p>I&apos;m a self-taught full-stack developer from Algeria with a focus on the MERN stack. I learn quickly and enjoy building modern, interactive, user-friendly applications. <br />
+				I have good problem solving skill as i solve most of my problems in a fast and clean way. <br />
+				I&apos;m constantly learning and staying updated with the latest web technologies. <br />
+				Currently open to freelance opportunities, collaborations, or full-time roles where I can contribute and grow as a developer.
+				</p>
+
+				{/* I&apos;m an aspiring full-stack developer with a focus on the MERN stack. My journey into web development began with a curiosity about how websites work and quickly grew into a passion for building interactive, user-friendly applications.{" "}
 				<br /> <br />
 				With a background in building responsive web apps, I bring a unique perspective to my development work. I approach each project as an opportunity to learn something new while creating solutions that are both technically sound and
-				aesthetically pleasing. <br /> <br /> I&apos;m constantly expanding my knowledge through online courses, documentation, and building projects. I believe in writing clean, maintainable code and creating intuitive user experiences.
+				aesthetically pleasing. <br /> <br /> I&apos;m constantly expanding my knowledge through online courses, documentation, and building projects. I believe in writing clean, maintainable code and creating intuitive user experiences. */}
 			</div>
 
 			<h2 className={styles.subTitle}>My Skills</h2>

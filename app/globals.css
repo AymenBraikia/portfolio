@@ -20,7 +20,7 @@ body {
 
 body {
   background-color: var(--themebgClr);
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font-main), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -40,7 +40,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
-#title{
+
+#title {
   color: var(--themeClr) !important;
   font-size: 45px;
 }

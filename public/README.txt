@@ -1,21 +1,29 @@
-Edu SA Hand Variable Font
-=========================
+Commissioner Variable Font
+==========================
 
-This download contains Edu SA Hand as both a variable font and static fonts.
+This download contains Commissioner as both a variable font and static fonts.
 
-Edu SA Hand is a variable font with this axis:
+Commissioner is a variable font with these axes:
+  FLAR
+  VOLM
+  slnt
   wght
 
 This means all the styles are contained in a single file:
-  EduSAHand-VariableFont_wght.ttf
+  Commissioner-VariableFont_FLAR,VOLM,slnt,wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Edu SA Hand:
-  static/EduSAHand-Regular.ttf
-  static/EduSAHand-Medium.ttf
-  static/EduSAHand-SemiBold.ttf
-  static/EduSAHand-Bold.ttf
+in those cases you can use the static font files for Commissioner:
+  static/Commissioner-Thin.ttf
+  static/Commissioner-ExtraLight.ttf
+  static/Commissioner-Light.ttf
+  static/Commissioner-Regular.ttf
+  static/Commissioner-Medium.ttf
+  static/Commissioner-SemiBold.ttf
+  static/Commissioner-Bold.ttf
+  static/Commissioner-ExtraBold.ttf
+  static/Commissioner-Black.ttf
 
 Get started
 -----------

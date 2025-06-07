@@ -34,6 +34,17 @@
     right: 50px;
 }
 
+.welcoming,
+.myself,
+.description,
+.icons,
+.btn {
+    opacity: 0;
+    transition: .5s ease;
+    transform: translate(-30px, 0);
+}
+
+
 .welcoming {
     color: var(--themeClr2);
     position: relative;
@@ -152,7 +163,7 @@
         height: 50px;
     }
 
-    .description{
+    .description {
         max-width: 1000px;
     }
 }

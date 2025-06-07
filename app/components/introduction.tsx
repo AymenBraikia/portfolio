@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import styles from "./introduction.module.css";
+import { useEffect, useRef } from "react";
 
 function github() {
 	return (
@@ -21,30 +23,54 @@ function linkedin() {
 }
 
 function Introduction() {
+	const welcoming = useRef<HTMLDivElement>(null);
+	const myself = useRef<HTMLDivElement>(null);
+	const description = useRef<HTMLDivElement>(null);
+	const btn = useRef<HTMLDivElement>(null);
+	const icons = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		welcoming.current?.classList.add("active");
+		myself.current?.classList.add("active");
+		description.current?.classList.add("active");
+		btn.current?.classList.add("active");
+		icons.current?.classList.add("active");
+	}, []);
+
 	return (
 		<div id="home" className={styles.container}>
-			<div className={styles.welcoming}>Hello, I&apos;m</div>
-			<div className={styles.myself}>
+			<div ref={welcoming} id="welcoming" className={styles.welcoming}>
+				Hello, I&apos;m
+			</div>
+
+			<div ref={myself} id="myself" className={styles.myself}>
 				<h1 className={styles.name}>Aymen Braikia</h1>
 				<h1 className={styles.position}>Full Stack Web Developer</h1>
 			</div>
 
-			<p className={styles.description}>(MERN Stack)</p>
-			<p className={styles.description}>
+			<p ref={description} id="description" className={styles.description}>
+				(MERN Stack)
+			</p>
+
+			<p ref={description} id="description" className={styles.description}>
 				As an enthusiastic web developer, I&apos;m on a quest to produce significant digital experiences. With my proficiency in Express.js, React.js, Node.js, and MongoDB, I turn concepts into sophisticated, useful apps.{" "}
 			</p>
-			<div className={styles.btn}>
+
+			<div ref={btn} id="btn" className={styles.btn}>
 				<Link className={styles.myWork} href={"#projects"}>
 					View My Work
 				</Link>
+
 				<Link className={styles.touch} href={"#contact"}>
 					Get In Touch
 				</Link>
 			</div>
-			<div className={styles.icons}>
+
+			<div ref={icons} id="icons" className={styles.icons}>
 				<Link href={"https://github.com/AymenBraikia"} className={styles.github}>
 					{github()}
 				</Link>
+
 				<Link href={"https://www.linkedin.com/in/aymenbraikia/"} className={styles.linkedin}>
 					{linkedin()}
 				</Link>

@@ -52,7 +52,8 @@ function Projects() {
 			neuroImg,
 			["React", "Next", "TypeScript", "Express", "Mongodb", "Node.js"],
 			"Neuro",
-			`Neuro is a sleek, responsive AI chatbot powered by Llama 3 APIs. It delivers real-time, human-like conversations through a clean, minimal UI. Designed for customer support, productivity, and general Q&A, Neuro offers a smooth and lightweight experience across all devices.`
+			`Neuro is an AI powered chatbot like chat-gpt that uses Llama 3 APIs. Took me a week to make using MERN stack + TypeScript. The main problems i faced while development was the cached CSS when i use Next router, in order to solve that i used moduled css instead of global css.`
+			// `Neuro is a sleek, responsive AI chatbot powered by Llama 3 APIs. It delivers real-time, human-like conversations through a clean, minimal UI. Designed for customer support, productivity, and general Q&A, Neuro offers a smooth and lightweight experience across all devices.`
 		),
 		new Project(
 			easyMartImg,

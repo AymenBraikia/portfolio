@@ -100,7 +100,7 @@ function Projects() {
 									{" Code"}
 								</Link>
 
-								<Link className={styles.link} href={"https://neuro-aymens-projects-a9014767.vercel.app/"}>
+								<Link className={styles.link} href={"https://easy-mart-five.vercel.app/"}>
 									{demo()}
 									{" Demo"}
 								</Link>

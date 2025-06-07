@@ -40,6 +40,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+#title{
+  color: var(--themeClr) !important;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

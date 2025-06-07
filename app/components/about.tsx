@@ -58,7 +58,7 @@ function Design() {
 function About() {
 	return (
 		<div id="about" className={styles.container}>
-			<h1 className={styles.title}>About Me</h1>
+			<h1 className={styles.title} id="title">About Me</h1>
 
 			<div className={styles.description}>
 				I&apos;m an aspiring full-stack developer with a focus on the MERN stack. My journey into web development began with a curiosity about how websites work and quickly grew into a passion for building interactive, user-friendly applications.{" "}

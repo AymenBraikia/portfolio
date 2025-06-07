@@ -64,7 +64,7 @@ function Projects() {
 
 	return (
 		<div id="projects" className={styles.container}>
-			<h1 className={styles.title}>Projects</h1>
+			<h1 className={styles.title} id="title">Projects</h1>
 			<div className={styles.description}>
 				Here are some of my recent projects that demonstrate my skills and expertise in the MERN stack. <br /> Each project was an opportunity to learn and grow as a developer.
 			</div>

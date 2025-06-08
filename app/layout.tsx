@@ -55,7 +55,7 @@ const myCustomFont = localFont({
 });
 export const metadata: Metadata = {
 	title: "Aymen Braikia",
-	description: "Aymen's Full stack web developer portfolio",
+	description: "Aymen's Software Engineer portfolio",
 };
 
 export default function RootLayout({

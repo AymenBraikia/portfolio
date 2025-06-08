@@ -45,7 +45,7 @@ function Introduction() {
 
 			<div ref={myself} id="myself" className={styles.myself}>
 				<h1 className={styles.name}>Aymen Braikia</h1>
-				<h1 className={styles.position}>Full Stack Web Developer</h1>
+				<h1 className={styles.position}>Software Engineer</h1>
 			</div>
 
 			<p ref={description} id="description" className={styles.description}>

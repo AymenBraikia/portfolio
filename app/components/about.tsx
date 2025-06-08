@@ -63,7 +63,7 @@ function About() {
 			</h1>
 
 			<div className={styles.description}>
-				<p>I&apos;m a self-taught full-stack developer from Algeria with a focus on the MERN stack. I learn quickly and enjoy building modern, interactive, user-friendly applications. <br />
+				<p>I&apos;m a self-taught Software Engineer from Algeria with a focus on the MERN stack. I learn quickly and enjoy building modern, interactive, user-friendly applications. <br />
 				I have good problem solving skill as i solve most of my problems in a fast and clean way. <br />
 				I&apos;m constantly learning and staying updated with the latest web technologies. <br />
 				Currently open to freelance opportunities, collaborations, or full-time roles where I can contribute and grow as a developer.

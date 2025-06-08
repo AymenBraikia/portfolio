@@ -53,7 +53,7 @@ function Introduction() {
 			</p>
 
 			<p ref={description} id="description" className={styles.description}>
-				As an enthusiastic web developer, I&apos;m on a quest to produce significant digital experiences. With my proficiency in Express.js, React.js, Node.js, and MongoDB, I turn concepts into sophisticated, useful apps.{" "}
+				As an enthusiastic Software Engineer, I&apos;m on a quest to produce significant digital experiences. With my proficiency in Express.js, React.js, Node.js, and MongoDB, I turn concepts into sophisticated, useful apps.{" "}
 			</p>
 
 			<div ref={btn} id="btn" className={styles.btn}>

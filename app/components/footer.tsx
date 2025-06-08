@@ -37,7 +37,7 @@ function Footer() {
 						Portfolio
 					</h2>
 					<p>
-						Aspiring MERN stack developer building modern web <br /> applications with passion and dedication.
+						Aspiring Software Engineer building modern web <br /> applications with passion and dedication.
 					</p>
 				</div>
 				<div className={styles.socialMedia}>

@@ -30,7 +30,8 @@ interface project {
 	skills: string[];
 	name: string;
 	description: string;
-	link: string;
+	demoLink: string;
+	githubLink: string;
 }
 
 class Project {
@@ -38,14 +39,16 @@ class Project {
 	skills: string[];
 	name: string;
 	description: string;
-	link: string;
+	demoLink: string;
+	githubLink: string;
 
-	constructor(img: StaticImageData, skills: string[], name: string, description: string, link: string) {
+	constructor(img: StaticImageData, skills: string[], name: string, description: string, demoLink: string, githubLink: string) {
 		this.imgSrc = img;
 		this.skills = skills;
 		this.name = name;
 		this.description = description;
-		this.link = link;
+		this.demoLink = demoLink;
+		this.githubLink = githubLink;
 	}
 }
 
@@ -56,7 +59,8 @@ function Projects() {
 			["React", "Next", "TypeScript", "Express", "Mongodb", "Node.js"],
 			"Neuro",
 			`Neuro is an AI powered chatbot like chat-gpt that uses Llama 3 APIs. Took me a week to make using MERN stack + TypeScript. The main problems i faced while development was the cached CSS when i use Next router, in order to solve that i used moduled css instead of global css.`,
-			"https://neuro-aymens-projects-a9014767.vercel.app/"
+			"https://neuro-aymens-projects-a9014767.vercel.app/",
+			"https://github.com/AymenBraikia/Neuro"
 			// `Neuro is a sleek, responsive AI chatbot powered by Llama 3 APIs. It delivers real-time, human-like conversations through a clean, minimal UI. Designed for customer support, productivity, and general Q&A, Neuro offers a smooth and lightweight experience across all devices.`
 		),
 		new Project(
@@ -64,7 +68,8 @@ function Projects() {
 			["React", "Next", "TypeScript", "Express", "Mongodb", "Node.js"],
 			"Easy Mart",
 			`Easy Mart is a e-commerce platform built with MERN stack and TypeScript. The biggest challenge was making filtering system and finding products data because most of the public fake data offered only one image and bad description and naming, so i had to make a small javascript script that copy product images and description from amazon and aliexpress`,
-			"https://easy-mart-five.vercel.app/"
+			"https://easy-mart-five.vercel.app/",
+			"https://github.com/AymenBraikia/Easy-Mart"
 		),
 	];
 
@@ -99,12 +104,12 @@ function Projects() {
 							<p className={styles.projectDescription}>{proj.description}</p>
 
 							<div className={styles.projectDetails}>
-								<Link className={styles.link} href={"https://github.com/AymenBraikia/Neuro"}>
+								<Link className={styles.link} href={proj.githubLink}>
 									{github()}
 									{" Code"}
 								</Link>
 
-								<Link className={styles.link} href={proj.link}>
+								<Link className={styles.link} href={proj.demoLink}>
 									{demo()}
 									{" Demo"}
 								</Link>

@@ -30,6 +30,7 @@ interface project {
 	skills: string[];
 	name: string;
 	description: string;
+	link: string;
 }
 
 class Project {
@@ -37,12 +38,14 @@ class Project {
 	skills: string[];
 	name: string;
 	description: string;
+	link: string;
 
-	constructor(img: StaticImageData, skills: string[], name: string, description: string) {
+	constructor(img: StaticImageData, skills: string[], name: string, description: string, link: string) {
 		this.imgSrc = img;
 		this.skills = skills;
 		this.name = name;
 		this.description = description;
+		this.link = link;
 	}
 }
 
@@ -52,15 +55,16 @@ function Projects() {
 			neuroImg,
 			["React", "Next", "TypeScript", "Express", "Mongodb", "Node.js"],
 			"Neuro",
-			`Neuro is an AI powered chatbot like chat-gpt that uses Llama 3 APIs. Took me a week to make using MERN stack + TypeScript. The main problems i faced while development was the cached CSS when i use Next router, in order to solve that i used moduled css instead of global css.`
+			`Neuro is an AI powered chatbot like chat-gpt that uses Llama 3 APIs. Took me a week to make using MERN stack + TypeScript. The main problems i faced while development was the cached CSS when i use Next router, in order to solve that i used moduled css instead of global css.`,
+			"https://neuro-aymens-projects-a9014767.vercel.app/"
 			// `Neuro is a sleek, responsive AI chatbot powered by Llama 3 APIs. It delivers real-time, human-like conversations through a clean, minimal UI. Designed for customer support, productivity, and general Q&A, Neuro offers a smooth and lightweight experience across all devices.`
 		),
 		new Project(
 			easyMartImg,
 			["React", "Next", "TypeScript", "Express", "Mongodb", "Node.js"],
 			"Easy Mart",
-			`Easy Mart is a e-commerce platform built with MERN stack and TypeScript. The biggest challenge was making filtering system and finding products data because most of the public fake data offered only one image and bad description and naming, so i had to make a small javascript script that copy product images and description from amazon and aliexpress`
-			// `EasyMart is a modern, fully responsive e-commerce platform built with Next.js and TypeScript. It offers dynamic product listings, category filtering, and a clean UI for a smooth shopping experience. Optimized for performance and scalability, it’s ideal for online retail.`
+			`Easy Mart is a e-commerce platform built with MERN stack and TypeScript. The biggest challenge was making filtering system and finding products data because most of the public fake data offered only one image and bad description and naming, so i had to make a small javascript script that copy product images and description from amazon and aliexpress`,
+			"https://easy-mart-five.vercel.app/"
 		),
 	];
 
@@ -100,7 +104,7 @@ function Projects() {
 									{" Code"}
 								</Link>
 
-								<Link className={styles.link} href={"https://easy-mart-five.vercel.app/"}>
+								<Link className={styles.link} href={proj.link}>
 									{demo()}
 									{" Demo"}
 								</Link>
@@ -109,63 +113,6 @@ function Projects() {
 					);
 				})}
 			</div>
-
-			{/* <div className={styles.project}>
-					<Image src={neuro} alt="Project 1" className={styles.projectImg}></Image>
-					<div className={styles.projectSkills}>
-						<div className={styles.skill}>React</div>
-						<div className={styles.skill}>Next</div>
-						<div className={styles.skill}>TypeScript</div>
-						<div className={styles.skill}>Express</div>
-						<div className={styles.skill}>Mongodb</div>
-						<div className={styles.skill}>Node.js</div>
-					</div>
-					<div className={styles.projectName}>Neuro AI</div>
-					<p className={styles.projectDescription}>
-						Neuro is a sleek, responsive AI chatbot powered by Llama 3 APIs. It delivers real-time, human-like conversations through a clean, minimal UI. Designed for customer support, productivity, and general Q&A, Neuro offers a smooth and
-						lightweight experience across all devices.
-					</p>
-					<div className={styles.projectDetails}>
-						<Link className={styles.link} href={"https://github.com/AymenBraikia/Neuro"}>
-							{github()}
-							{" Code"}
-						</Link>
-
-						<Link className={styles.link} href={"https://neuro-aymens-projects-a9014767.vercel.app/"}>
-							{demo()}
-							{" Demo"}
-						</Link>
-					</div>
-				</div>
-
-				<div className={styles.project}>
-					<Image src={easyMart} alt="Project 2 Easy Mart" className={styles.projectImg}></Image>
-					<div className={styles.projectSkills}>
-						<div className={styles.skill}>React</div>
-						<div className={styles.skill}>Next</div>
-						<div className={styles.skill}>TypeScript</div>
-						<div className={styles.skill}>Express</div>
-						<div className={styles.skill}>Mongodb</div>
-						<div className={styles.skill}>Node.js</div>
-					</div>
-					<div className={styles.projectName}>Easy Mart</div>
-					<p className={styles.projectDescription}>
-						EasyMart is a modern, fully responsive e-commerce platform built with Next.js and TypeScript. It offers dynamic product listings, category filtering, and a clean UI for a smooth shopping experience. Optimized for performance and
-						scalability, it’s ideal for online retail.{" "}
-					</p>
-					<div className={styles.projectDetails}>
-						<Link className={styles.link} href={"https://github.com/AymenBraikia/Easy-Mart"}>
-							{github()}
-							{" Code"}
-						</Link>
-
-						<Link className={styles.link} href={"https://easy-mart-five.vercel.app/"}>
-							{demo()}
-							{" Demo"}
-						</Link>
-					</div>
-				</div> */
-			/* </div> */}
 		</div>
 	);
 }
